@@ -148,6 +148,7 @@ INSTALLED_APPS = (
     'djangocms_video',
 
     'aldryn_background_image',
+    'aldryn_bootstrap3',
 
     'mysite'
 )
@@ -209,3 +210,4 @@ THUMBNAIL_PROCESSORS = (
 )
 
 DJANGOCMS_STYLE_CHOICES = ['container', 'page-heading']
+
