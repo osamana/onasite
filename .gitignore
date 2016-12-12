@@ -174,3 +174,6 @@ $RECYCLE.BIN/
 .gitignore
 .idea/
 inbox/
+
+onasite/media/*
+onasite/static/*
