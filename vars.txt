@@ -1,3 +1,5 @@
 
 mysql root password: secret
 virtualenv: env
+
+superuser: admin @ feb1123513
