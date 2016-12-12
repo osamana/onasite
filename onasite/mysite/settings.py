@@ -29,6 +29,7 @@ SECRET_KEY = 'fnte_t!opu8cjd+p!em+#ocin^%!y80jf)_y@=e)jio)_-b!8w'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'onasite.dev',
     'www.onasite.dev',
     '192.168.33.9',
