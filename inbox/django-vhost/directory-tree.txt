@@ -1,0 +1,617 @@
+.
+├── apache-confi.txt
+├── django-cms-requirements.txt
+├── global_requirements.txt
+├── inbox
+│   └── directory-tree.txt
+├── manual installation apache.txt
+├── manual install.txt
+├── myproject
+│   ├── manage.py
+│   ├── media
+│   │   ├── filer_public
+│   │   │   ├── 03
+│   │   │   │   └── 7f
+│   │   │   │       └── 037ff9d2-d8c2-405f-9219-88570eac0790
+│   │   │   │           └── post-sample-image.jpg
+│   │   │   └── 90
+│   │   │       └── 4f
+│   │   │           └── 904f6bac-fc5c-4250-b145-656693468d54
+│   │   │               └── 03_-_default1noculling.jpg
+│   │   └── filer_public_thumbnails
+│   │       └── filer_public
+│   │           ├── 03
+│   │           │   └── 7f
+│   │           │       └── 037ff9d2-d8c2-405f-9219-88570eac0790
+│   │           │           ├── post-sample-image.jpg__16x16_q85_crop_subsampling-2_upscale.jpg
+│   │           │           ├── post-sample-image.jpg__180x180_q85_crop_subsampling-2_upscale.jpg
+│   │           │           ├── post-sample-image.jpg__32x32_q85_crop_subsampling-2_upscale.jpg
+│   │           │           ├── post-sample-image.jpg__48x48_q85_crop_subsampling-2_upscale.jpg
+│   │           │           ├── post-sample-image.jpg__64x64_q85_crop_subsampling-2_upscale.jpg
+│   │           │           ├── post-sample-image.jpg__778x514_q85_crop_subsampling-2_upscale.jpg
+│   │           │           └── post-sample-image.jpg__778x514_q85_subsampling-2.jpg
+│   │           └── 90
+│   │               └── 4f
+│   │                   └── 904f6bac-fc5c-4250-b145-656693468d54
+│   │                       ├── 03_-_default1noculling.jpg__16x16_q85_crop_subsampling-2_upscale.jpg
+│   │                       ├── 03_-_default1noculling.jpg__180x180_q85_crop_subsampling-2_upscale.jpg
+│   │                       ├── 03_-_default1noculling.jpg__32x32_q85_crop_subsampling-2_upscale.jpg
+│   │                       ├── 03_-_default1noculling.jpg__48x48_q85_crop_subsampling-2_upscale.jpg
+│   │                       ├── 03_-_default1noculling.jpg__512x512_q85_crop_subsampling-2_upscale.jpg
+│   │                       ├── 03_-_default1noculling.jpg__512x512_q85_subsampling-2.jpg
+│   │                       └── 03_-_default1noculling.jpg__64x64_q85_crop_subsampling-2_upscale.jpg
+│   ├── myproject
+│   │   ├── __init__.py
+│   │   ├── __init__.pyc
+│   │   ├── settings.py
+│   │   ├── settings.pyc
+│   │   ├── templates
+│   │   │   ├── base.html
+│   │   │   ├── template_1.html
+│   │   │   └── template_2.html
+│   │   ├── urls.py
+│   │   ├── urls.pyc
+│   │   ├── wsgi.py
+│   │   └── wsgi.pyc
+│   └── static
+│       ├── admin
+│       │   ├── css
+│       │   │   ├── base.css
+│       │   │   ├── changelists.css
+│       │   │   ├── dashboard.css
+│       │   │   ├── fonts.css
+│       │   │   ├── forms.css
+│       │   │   ├── login.css
+│       │   │   ├── rtl.css
+│       │   │   └── widgets.css
+│       │   ├── fonts
+│       │   │   ├── LICENSE.txt
+│       │   │   ├── README.txt
+│       │   │   ├── Roboto-Bold-webfont.woff
+│       │   │   ├── Roboto-Light-webfont.woff
+│       │   │   └── Roboto-Regular-webfont.woff
+│       │   ├── img
+│       │   │   ├── calendar-icons.svg
+│       │   │   ├── gis
+│       │   │   │   ├── move_vertex_off.svg
+│       │   │   │   └── move_vertex_on.svg
+│       │   │   ├── icon_addlink.gif
+│       │   │   ├── icon-addlink.svg
+│       │   │   ├── icon-alert.svg
+│       │   │   ├── icon_calendar.gif
+│       │   │   ├── icon-calendar.svg
+│       │   │   ├── icon_changelink.gif
+│       │   │   ├── icon-changelink.svg
+│       │   │   ├── icon_clock.gif
+│       │   │   ├── icon-clock.svg
+│       │   │   ├── icon_deletelink.gif
+│       │   │   ├── icon-deletelink.svg
+│       │   │   ├── icon-no.svg
+│       │   │   ├── icon_searchbox.png
+│       │   │   ├── icon-unknown-alt.svg
+│       │   │   ├── icon-unknown.svg
+│       │   │   ├── icon-yes.gif
+│       │   │   ├── icon-yes.svg
+│       │   │   ├── inline-delete.svg
+│       │   │   ├── LICENSE
+│       │   │   ├── README.txt
+│       │   │   ├── search.svg
+│       │   │   ├── selector-icons.gif
+│       │   │   ├── selector-icons.svg
+│       │   │   ├── selector-search.gif
+│       │   │   ├── sorting-icons.svg
+│       │   │   ├── tooltag-add.svg
+│       │   │   └── tooltag-arrowright.svg
+│       │   └── js
+│       │       ├── actions.js
+│       │       ├── actions.min.js
+│       │       ├── admin
+│       │       │   ├── DateTimeShortcuts.js
+│       │       │   └── RelatedObjectLookups.js
+│       │       ├── calendar.js
+│       │       ├── cancel.js
+│       │       ├── change_form.js
+│       │       ├── collapse.js
+│       │       ├── collapse.min.js
+│       │       ├── core.js
+│       │       ├── inlines.js
+│       │       ├── inlines.min.js
+│       │       ├── jquery.init.js
+│       │       ├── popup_response.js
+│       │       ├── prepopulate_init.js
+│       │       ├── prepopulate.js
+│       │       ├── prepopulate.min.js
+│       │       ├── SelectBox.js
+│       │       ├── SelectFilter2.js
+│       │       ├── timeparse.js
+│       │       ├── urlify.js
+│       │       └── vendor
+│       │           ├── jquery
+│       │           │   ├── jquery.js
+│       │           │   ├── jquery.min.js
+│       │           │   └── LICENSE-JQUERY.txt
+│       │           └── xregexp
+│       │               ├── LICENSE-XREGEXP.txt
+│       │               ├── xregexp.js
+│       │               └── xregexp.min.js
+│       ├── cms
+│       │   ├── css
+│       │   │   └── 3.4.1
+│       │   │       ├── cms.base.css
+│       │   │       ├── cms.pagetree.css
+│       │   │       ├── cms.welcome.css
+│       │   │       └── cms.wizard.css
+│       │   ├── fonts
+│       │   │   ├── 3.4.1
+│       │   │   │   ├── django-cms-iconfont.eot
+│       │   │   │   ├── django-cms-iconfont.svg
+│       │   │   │   ├── django-cms-iconfont.ttf
+│       │   │   │   ├── django-cms-iconfont.woff
+│       │   │   │   └── django-cms-iconfont.woff2
+│       │   │   └── src
+│       │   │       ├── alias.svg
+│       │   │       ├── arrow-right.svg
+│       │   │       ├── arrow.svg
+│       │   │       ├── arrow-wide.svg
+│       │   │       ├── bin.svg
+│       │   │       ├── check-o.svg
+│       │   │       ├── check-square.svg
+│       │   │       ├── check.svg
+│       │   │       ├── close.svg
+│       │   │       ├── cogs.svg
+│       │   │       ├── copy.svg
+│       │   │       ├── eye.svg
+│       │   │       ├── forbidden.svg
+│       │   │       ├── handler.svg
+│       │   │       ├── home.svg
+│       │   │       ├── info.svg
+│       │   │       ├── loader.svg
+│       │   │       ├── lock.svg
+│       │   │       ├── logo.svg
+│       │   │       ├── menu.svg
+│       │   │       ├── minimize.svg
+│       │   │       ├── minus-square-o.svg
+│       │   │       ├── minus-square.svg
+│       │   │       ├── minus.svg
+│       │   │       ├── paste.svg
+│       │   │       ├── pencil.svg
+│       │   │       ├── pin.svg
+│       │   │       ├── plus-square-o.svg
+│       │   │       ├── plus.svg
+│       │   │       ├── puzzle.svg
+│       │   │       ├── scissors.svg
+│       │   │       ├── search.svg
+│       │   │       ├── sitemap.svg
+│       │   │       ├── squares.svg
+│       │   │       ├── _template.svgz
+│       │   │       └── window.svg
+│       │   ├── images
+│       │   │   └── sitemap-li-bg.jpg
+│       │   ├── img
+│       │   │   ├── favicon.png
+│       │   │   ├── icons
+│       │   │   │   ├── filetypes
+│       │   │   │   │   ├── flv.gif
+│       │   │   │   │   ├── gif.gif
+│       │   │   │   │   ├── html.gif
+│       │   │   │   │   ├── java.gif
+│       │   │   │   │   ├── jpg.gif
+│       │   │   │   │   ├── mp3.png
+│       │   │   │   │   ├── ods.png
+│       │   │   │   │   ├── odt.png
+│       │   │   │   │   ├── pdf.gif
+│       │   │   │   │   ├── php.gif
+│       │   │   │   │   ├── png.gif
+│       │   │   │   │   ├── swf.gif
+│       │   │   │   │   ├── tgz.png
+│       │   │   │   │   ├── ttf.gif
+│       │   │   │   │   ├── txt.gif
+│       │   │   │   │   ├── txt.png
+│       │   │   │   │   ├── wav.gif
+│       │   │   │   │   └── zip.png
+│       │   │   │   └── plugins
+│       │   │   │       ├── file.png
+│       │   │   │       ├── get_flash_player.gif
+│       │   │   │       ├── image.png
+│       │   │   │       ├── link.png
+│       │   │   │       └── snippet.png
+│       │   │   ├── loader@2x.gif
+│       │   │   ├── loader.gif
+│       │   │   ├── pagetree
+│       │   │   │   └── tree-li-drag.gif
+│       │   │   └── toolbar
+│       │   │       ├── render_model_add.png
+│       │   │       ├── render_model_icon.png
+│       │   │       └── render_model_placeholder.png
+│       │   ├── js
+│       │   │   ├── admin.base.js
+│       │   │   ├── admin.changeform.js
+│       │   │   ├── admin.pagetree.js
+│       │   │   ├── dist
+│       │   │   │   └── 3.4.1
+│       │   │   │       ├── bundle.admin.base.min.js
+│       │   │   │       ├── bundle.admin.changeform.min.js
+│       │   │   │       ├── bundle.admin.pagetree.min.js
+│       │   │   │       ├── bundle.admin.widget.min.js
+│       │   │   │       ├── bundle.forms.apphookselect.min.js
+│       │   │   │       ├── bundle.forms.pageselectwidget.min.js
+│       │   │   │       ├── bundle.forms.pagesmartlinkwidget.min.js
+│       │   │   │       └── bundle.toolbar.min.js
+│       │   │   ├── libs
+│       │   │   │   ├── class.min.js
+│       │   │   │   ├── jquery.min.js
+│       │   │   │   ├── jstree
+│       │   │   │   │   ├── jstree.grid.min.js
+│       │   │   │   │   └── jstree.min.js
+│       │   │   │   └── pep.js
+│       │   │   ├── modules
+│       │   │   │   ├── cms.base.js
+│       │   │   │   ├── cms.changeform.js
+│       │   │   │   ├── cms.changetracker.js
+│       │   │   │   ├── cms.clipboard.js
+│       │   │   │   ├── cms.messages.js
+│       │   │   │   ├── cms.modal.js
+│       │   │   │   ├── cms.navigation.js
+│       │   │   │   ├── cms.pagetree.dropdown.js
+│       │   │   │   ├── cms.pagetree.js
+│       │   │   │   ├── cms.pagetree.stickyheader.js
+│       │   │   │   ├── cms.plugins.js
+│       │   │   │   ├── cms.sideframe.js
+│       │   │   │   ├── cms.structureboard.js
+│       │   │   │   ├── cms.toolbar.js
+│       │   │   │   ├── cms.tooltip.js
+│       │   │   │   ├── cms.wizards.js
+│       │   │   │   ├── get-dist-path.js
+│       │   │   │   ├── jquery.noconflict.post.js
+│       │   │   │   ├── jquery.noconflict.pre.js
+│       │   │   │   ├── jquery.transition.js
+│       │   │   │   ├── jquery.trap.js
+│       │   │   │   ├── jquery.ui.custom.js
+│       │   │   │   ├── jquery.ui.nestedsortable.js
+│       │   │   │   ├── jquery.ui.touchpunch.js
+│       │   │   │   ├── keyboard.js
+│       │   │   │   ├── nextuntil.js
+│       │   │   │   ├── shortcuts
+│       │   │   │   │   ├── create-modal.js
+│       │   │   │   │   ├── help.html
+│       │   │   │   │   ├── help.js
+│       │   │   │   │   ├── index.js
+│       │   │   │   │   ├── placeholders.js
+│       │   │   │   │   └── toolbar.js
+│       │   │   │   ├── simplemap.js
+│       │   │   │   └── tmpl.js
+│       │   │   ├── polyfills
+│       │   │   │   ├── array.prototype.findindex.js
+│       │   │   │   └── function.prototype.bind.js
+│       │   │   ├── select2
+│       │   │   │   ├── LICENSE
+│       │   │   │   ├── README.md
+│       │   │   │   ├── select2-bootstrap.css
+│       │   │   │   ├── select2.css
+│       │   │   │   ├── select2.js
+│       │   │   │   ├── select2_locale_ar.js
+│       │   │   │   ├── select2_locale_az.js
+│       │   │   │   ├── select2_locale_bg.js
+│       │   │   │   ├── select2_locale_ca.js
+│       │   │   │   ├── select2_locale_cs.js
+│       │   │   │   ├── select2_locale_da.js
+│       │   │   │   ├── select2_locale_de.js
+│       │   │   │   ├── select2_locale_el.js
+│       │   │   │   ├── select2_locale_en.js.template
+│       │   │   │   ├── select2_locale_es.js
+│       │   │   │   ├── select2_locale_et.js
+│       │   │   │   ├── select2_locale_eu.js
+│       │   │   │   ├── select2_locale_fa.js
+│       │   │   │   ├── select2_locale_fi.js
+│       │   │   │   ├── select2_locale_fr.js
+│       │   │   │   ├── select2_locale_gl.js
+│       │   │   │   ├── select2_locale_he.js
+│       │   │   │   ├── select2_locale_hr.js
+│       │   │   │   ├── select2_locale_hu.js
+│       │   │   │   ├── select2_locale_id.js
+│       │   │   │   ├── select2_locale_is.js
+│       │   │   │   ├── select2_locale_it.js
+│       │   │   │   ├── select2_locale_ja.js
+│       │   │   │   ├── select2_locale_ka.js
+│       │   │   │   ├── select2_locale_ko.js
+│       │   │   │   ├── select2_locale_lt.js
+│       │   │   │   ├── select2_locale_lv.js
+│       │   │   │   ├── select2_locale_mk.js
+│       │   │   │   ├── select2_locale_ms.js
+│       │   │   │   ├── select2_locale_nl.js
+│       │   │   │   ├── select2_locale_no.js
+│       │   │   │   ├── select2_locale_pl.js
+│       │   │   │   ├── select2_locale_pt-BR.js
+│       │   │   │   ├── select2_locale_pt-PT.js
+│       │   │   │   ├── select2_locale_ro.js
+│       │   │   │   ├── select2_locale_rs.js
+│       │   │   │   ├── select2_locale_ru.js
+│       │   │   │   ├── select2_locale_sk.js
+│       │   │   │   ├── select2_locale_sv.js
+│       │   │   │   ├── select2_locale_th.js
+│       │   │   │   ├── select2_locale_tr.js
+│       │   │   │   ├── select2_locale_ug-CN.js
+│       │   │   │   ├── select2_locale_uk.js
+│       │   │   │   ├── select2_locale_vi.js
+│       │   │   │   ├── select2_locale_zh-CN.js
+│       │   │   │   ├── select2_locale_zh-TW.js
+│       │   │   │   ├── select2.png
+│       │   │   │   ├── select2-spinner.gif
+│       │   │   │   └── select2x2.png
+│       │   │   ├── toolbar.js
+│       │   │   └── widgets
+│       │   │       ├── forms.apphookselect.js
+│       │   │       ├── forms.pageselectwidget.js
+│       │   │       ├── forms.pagesmartlinkwidget.js
+│       │   │       └── wizard.pagetypeselect.js
+│       │   ├── PIE.htc
+│       │   └── sass
+│       │       ├── cms.base.scss
+│       │       ├── cms.pagetree.scss
+│       │       ├── cms.welcome.scss
+│       │       ├── cms.wizard.scss
+│       │       ├── components
+│       │       │   ├── _animation.scss
+│       │       │   ├── _button.scss
+│       │       │   ├── _clipboard.scss
+│       │       │   ├── _content.scss
+│       │       │   ├── _dialog.scss
+│       │       │   ├── _general.scss
+│       │       │   ├── _hovertooltip.scss
+│       │       │   ├── _iconography.scss
+│       │       │   ├── _loader.scss
+│       │       │   ├── _modal.scss
+│       │       │   ├── pagetree
+│       │       │   │   ├── _all.scss
+│       │       │   │   ├── _dropdown.scss
+│       │       │   │   ├── _legend.scss
+│       │       │   │   ├── _node-state.scss
+│       │       │   │   └── _tree.scss
+│       │       │   ├── _pluginpicker.scss
+│       │       │   ├── _reset.scss
+│       │       │   ├── _shortcuts.scss
+│       │       │   ├── _sideframe.scss
+│       │       │   ├── _structureboard.scss
+│       │       │   ├── _subnav.scss
+│       │       │   ├── _toolbar.scss
+│       │       │   ├── _tooltip.scss
+│       │       │   └── _welcome.scss
+│       │       ├── libs
+│       │       │   └── _iconfont.scss
+│       │       ├── mixins
+│       │       │   ├── _all.scss
+│       │       │   ├── _buttons.scss
+│       │       │   ├── _custom.scss
+│       │       │   ├── _retina.scss
+│       │       │   └── _zindex.scss
+│       │       └── settings
+│       │           ├── _all.scss
+│       │           ├── _cms.scss
+│       │           └── _pagetree.scss
+│       ├── cmsplugin_filer_folder
+│       │   ├── css
+│       │   │   └── slideshow.css
+│       │   └── js
+│       │       └── jquery.cycle.lite-1.7.js
+│       ├── djangocms_admin_style
+│       │   ├── css
+│       │   │   ├── djangocms-admin.css
+│       │   │   ├── djangocms-admin-frontend.css
+│       │   │   ├── ie.css
+│       │   │   └── pie.css
+│       │   ├── fonts
+│       │   │   ├── django-admin-icons.eot
+│       │   │   ├── django-admin-icons.svg
+│       │   │   ├── django-admin-icons.ttf
+│       │   │   └── django-admin-icons.woff
+│       │   └── img
+│       │       ├── bg-pattern.jpg
+│       │       ├── bg-pattern-light.jpg
+│       │       ├── icon_addlink@2x.gif
+│       │       ├── icon_addlink_large@2x.gif
+│       │       ├── icon_addlink_large.gif
+│       │       ├── icon_calendar@2x.gif
+│       │       ├── icon_changelink@2x.gif
+│       │       ├── icon_changelink_white@2x.png
+│       │       ├── icon_changelink_white.png
+│       │       ├── icon_clock@2x.gif
+│       │       ├── icon_deletelink@2x.png
+│       │       ├── icon_deletelink.png
+│       │       ├── icon_searchbox@2x.png
+│       │       ├── icon_softroot@2x.png
+│       │       ├── icon_softroot.png
+│       │       └── pluginlist-holder-bg.png
+│       ├── djangocms_googlemap
+│       │   └── js
+│       │       └── djangocms.googlemap.js
+│       ├── filer
+│       │   ├── css
+│       │   │   └── admin_filer.css
+│       │   ├── fonts
+│       │   │   ├── django-filer-iconfont.eot
+│       │   │   ├── django-filer-iconfont.svg
+│       │   │   ├── django-filer-iconfont.ttf
+│       │   │   ├── django-filer-iconfont.woff
+│       │   │   ├── django-filer-iconfont.woff2
+│       │   │   ├── FontAwesome.otf
+│       │   │   ├── fontawesome-webfont.eot
+│       │   │   ├── fontawesome-webfont.svg
+│       │   │   ├── fontawesome-webfont.ttf
+│       │   │   ├── fontawesome-webfont.woff
+│       │   │   ├── fontawesome-webfont.woff2
+│       │   │   └── src
+│       │   │       ├── check.svg
+│       │   │       ├── remove.svg
+│       │   │       └── trash-o.svg
+│       │   ├── icons
+│       │   │   ├── breadcrubms_dropdown_28_28.png
+│       │   │   ├── file_128x128@2x.png
+│       │   │   ├── file_128x128.png
+│       │   │   ├── file_16x16@2x.png
+│       │   │   ├── file_16x16.png
+│       │   │   ├── file_256x256@2x.png
+│       │   │   ├── file_256x256.png
+│       │   │   ├── file_32x32@2x.png
+│       │   │   ├── file_32x32.png
+│       │   │   ├── file_48x48@2x.png
+│       │   │   ├── file_48x48.png
+│       │   │   ├── file_64x64@2x.png
+│       │   │   ├── file_64x64.png
+│       │   │   ├── image_128x128@2x.png
+│       │   │   ├── image_128x128.png
+│       │   │   ├── image_16x16@2x.png
+│       │   │   ├── image_16x16.png
+│       │   │   ├── image_256x256@2x.png
+│       │   │   ├── image_256x256.png
+│       │   │   ├── image_32x32@2x.png
+│       │   │   ├── image_32x32.png
+│       │   │   ├── image_48x48@2x.png
+│       │   │   ├── image_48x48.png
+│       │   │   ├── image_512x512@2x.png
+│       │   │   ├── image_512x512.png
+│       │   │   ├── image_64x64@2x.png
+│       │   │   ├── image_64x64.png
+│       │   │   ├── incomplete_metadata_folder_128x128@2x.png
+│       │   │   ├── incomplete_metadata_folder_128x128.png
+│       │   │   ├── incomplete_metadata_folder_16x16@2x.png
+│       │   │   ├── incomplete_metadata_folder_16x16.png
+│       │   │   ├── incomplete_metadata_folder_256x256@2x.png
+│       │   │   ├── incomplete_metadata_folder_256x256.png
+│       │   │   ├── incomplete_metadata_folder_32x32@2x.png
+│       │   │   ├── incomplete_metadata_folder_32x32.png
+│       │   │   ├── incomplete_metadata_folder_48x48@2x.png
+│       │   │   ├── incomplete_metadata_folder_48x48.png
+│       │   │   ├── incomplete_metadata_folder_512x512@2x.png
+│       │   │   ├── incomplete_metadata_folder_512x512.png
+│       │   │   ├── incomplete_metadata_folder_64x64@2x.png
+│       │   │   ├── incomplete_metadata_folder_64x64.png
+│       │   │   ├── missingfile_128x128@2x.png
+│       │   │   ├── missingfile_128x128.png
+│       │   │   ├── missingfile_16x16@2x.png
+│       │   │   ├── missingfile_16x16.png
+│       │   │   ├── missingfile_256x256@2x.png
+│       │   │   ├── missingfile_256x256.png
+│       │   │   ├── missingfile_32x32@2x.png
+│       │   │   ├── missingfile_32x32.png
+│       │   │   ├── missingfile_48x48@2x.png
+│       │   │   ├── missingfile_48x48.png
+│       │   │   ├── missingfile_512x512@2x.png
+│       │   │   ├── missingfile_512x512.png
+│       │   │   ├── missingfile_64x64@2x.png
+│       │   │   ├── missingfile_64x64.png
+│       │   │   ├── nofile_128x128@2x.png
+│       │   │   ├── nofile_128x128.png
+│       │   │   ├── nofile_16x16@2x.png
+│       │   │   ├── nofile_16x16.png
+│       │   │   ├── nofile_256x256@2x.png
+│       │   │   ├── nofile_256x256.png
+│       │   │   ├── nofile_32x32@2x.png
+│       │   │   ├── nofile_32x32.png
+│       │   │   ├── nofile_48x48@2x.png
+│       │   │   ├── nofile_48x48.png
+│       │   │   ├── nofile_512x512@2x.png
+│       │   │   ├── nofile_512x512.png
+│       │   │   ├── nofile_64x64@2x.png
+│       │   │   ├── nofile_64x64.png
+│       │   │   ├── plainfolder_128x128@2x.png
+│       │   │   ├── plainfolder_128x128.png
+│       │   │   ├── plainfolder_16x16@2x.png
+│       │   │   ├── plainfolder_16x16.png
+│       │   │   ├── plainfolder_256x256@2x.png
+│       │   │   ├── plainfolder_256x256.png
+│       │   │   ├── plainfolder_32x32@2x.png
+│       │   │   ├── plainfolder_32x32.png
+│       │   │   ├── plainfolder_48x48@2x.png
+│       │   │   ├── plainfolder_48x48.png
+│       │   │   ├── plainfolder_512x512@2x.png
+│       │   │   ├── plainfolder_512x512.png
+│       │   │   ├── plainfolder_64x64@2x.png
+│       │   │   ├── plainfolder_64x64.png
+│       │   │   ├── root_28x28.png
+│       │   │   ├── unfiled_folder_128x128@2x.png
+│       │   │   ├── unfiled_folder_128x128.png
+│       │   │   ├── unfiled_folder_16x16@2x.png
+│       │   │   ├── unfiled_folder_16x16.png
+│       │   │   ├── unfiled_folder_256x256@2x.png
+│       │   │   ├── unfiled_folder_256x256.png
+│       │   │   ├── unfiled_folder_32x32@2x.png
+│       │   │   ├── unfiled_folder_32x32.png
+│       │   │   ├── unfiled_folder_48x48@2x.png
+│       │   │   ├── unfiled_folder_48x48.png
+│       │   │   ├── unfiled_folder_512x512@2x.png
+│       │   │   ├── unfiled_folder_512x512.png
+│       │   │   ├── unfiled_folder_64x64@2x.png
+│       │   │   ├── unfiled_folder_64x64.png
+│       │   │   ├── video_128x128@2x.png
+│       │   │   ├── video_128x128.png
+│       │   │   ├── video_16x16@2x.png
+│       │   │   ├── video_16x16.png
+│       │   │   ├── video_256x256@2x.png
+│       │   │   ├── video_256x256.png
+│       │   │   ├── video_32x32@2x.png
+│       │   │   ├── video_32x32.png
+│       │   │   ├── video_48x48@2x.png
+│       │   │   ├── video_48x48.png
+│       │   │   ├── video_512x512@2x.png
+│       │   │   ├── video_512x512.png
+│       │   │   ├── video_64x64@2x.png
+│       │   │   ├── video_64x64.png
+│       │   │   ├── xfile_128x128@2x.png
+│       │   │   ├── xfile_128x128.png
+│       │   │   ├── xfile_16x16@2x.png
+│       │   │   ├── xfile_16x16.png
+│       │   │   ├── xfile_256x256@2x.png
+│       │   │   ├── xfile_256x256.png
+│       │   │   ├── xfile_32x32@2x.png
+│       │   │   ├── xfile_32x32.png
+│       │   │   ├── xfile_48x48@2x.png
+│       │   │   ├── xfile_48x48.png
+│       │   │   ├── xfile_512x512@2x.png
+│       │   │   ├── xfile_512x512.png
+│       │   │   ├── xfile_64x64@2x.png
+│       │   │   └── xfile_64x64.png
+│       │   ├── img
+│       │   │   ├── button-bg.gif
+│       │   │   ├── close.gif
+│       │   │   ├── icon_changelink.gif
+│       │   │   ├── icon_deletelink.gif
+│       │   │   ├── loading_animation.gif
+│       │   │   ├── nav-bg.gif
+│       │   │   ├── select_item.gif
+│       │   │   ├── select_item-hover.gif
+│       │   │   └── upload_button.png
+│       │   └── js
+│       │       ├── addons
+│       │       │   ├── copy-move-files.js
+│       │       │   ├── dropdown-menu.js
+│       │       │   ├── dropzone.init.js
+│       │       │   ├── focal-point.js
+│       │       │   ├── popup_handling.js
+│       │       │   ├── table-dropzone.js
+│       │       │   ├── toggler.js
+│       │       │   ├── tooltip.js
+│       │       │   ├── upload-button.js
+│       │       │   └── widget.js
+│       │       ├── base.js
+│       │       └── libs
+│       │           ├── class.min.js
+│       │           ├── dropzone.min.js
+│       │           ├── fileuploader.min.js
+│       │           ├── jquery.cookie.min.js
+│       │           ├── jquery.min.js
+│       │           ├── jquery-ui.min.js
+│       │           ├── mediator.min.js
+│       │           └── retina.min.js
+│       └── treebeard
+│           ├── expand-collapse.png
+│           ├── jquery-ui-1.8.5.custom.min.js
+│           ├── treebeard-admin.css
+│           └── treebeard-admin.js
+├── provision_bootstrap.sh
+├── provision_django.sh
+├── requirements.txt
+├── run_server.sh
+├── setup.sh
+└── Vagrantfile
+
+79 directories, 535 files

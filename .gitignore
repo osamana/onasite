@@ -173,7 +173,7 @@ $RECYCLE.BIN/
 # user specific
 .gitignore
 .idea/
-inbox/
+# inbox/
 
 onasite/media/*
 onasite/static/*

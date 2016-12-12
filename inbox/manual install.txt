@@ -1,0 +1,57 @@
+#  installing mysql for ubuntu 14.04
+sudo apt-get update
+
+# sudo apt-get install mysql-server
+# silent install
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password secret'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password secret'
+sudo apt-get -y install mysql-server
+
+
+mysql -u root -psecret << EOF
+CREATE USER 'dbuser' IDENTIFIED BY 'secret';
+CREATE DATABASE db CHARSET UTF8;
+GRANT ALL PRIVILEGES ON db.* TO "dbuser"@"localhost" IDENTIFIED BY "secret";
+EOF
+
+# switch to the virtual environment
+
+sudo apt-get build-dep python-mysqldb
+sudo pip install MySQL-python
+sudo apt-get install python-mysqldb
+
+# this one worked
+pip install mysql-python
+
+
+# setting up the prompt
+mkdir ~/.bash
+cd ~/.bash
+git clone https://github.com/osamana/git-aware-prompt.git
+
+
+# you might need to change the permissions on the following main.sh file
+
+# add these to the ~/.bashrc
+cat <<EOF >> ~/.bashrc
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+EOF
+
+#  restart the .bashrc source
+. ~/.bashrc
+
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db',
+        'USER': 'dbuser',
+        'PASSWORD': 'secret',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
