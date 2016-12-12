@@ -150,6 +150,21 @@ INSTALLED_APPS = (
     'aldryn_background_image',
     'aldryn_bootstrap3',
 
+    # you will probably need to add these
+    'aldryn_apphooks_config',
+    'aldryn_categories',
+    'aldryn_common',
+    'aldryn_newsblog',
+    'aldryn_people',
+    'aldryn_reversion',
+    'aldryn_translation_tools',
+    'parler',
+    'sortedm2m',
+    'taggit',
+
+    # you'll almost certainly have these installed already
+    'reversion',
+
     'mysite'
 )
 
@@ -207,7 +222,7 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.autocrop',
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
+    'easy_thumbnails.processors.background',
 )
 
 DJANGOCMS_STYLE_CHOICES = ['container', 'page-heading']
-
