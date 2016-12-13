@@ -173,6 +173,7 @@ INSTALLED_APPS = (
 
     'mysite',
     'my_custom_page_extention',
+    'my_custom_social_addon',
 )
 
 LANGUAGES = (
