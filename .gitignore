@@ -175,5 +175,5 @@ $RECYCLE.BIN/
 .idea/
 # inbox/
 
-onasite/media/*
+# onasite/media/*
 onasite/static/*
