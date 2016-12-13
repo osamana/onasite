@@ -1,5 +1,4 @@
-{% load staticfiles i18n cms_tags sekizai_tags menu_tags %}
-
+{% load staticfiles i18n cms_tags sekizai_tags menu_tags thumbnail %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
@@ -12,7 +11,7 @@
 
     <title>
         {% block title %}
-            {% page_attribute "page_title" %} - {{ request.site.name }}
+        {% page_attribute "page_title" %} - {{ request.site.name }}
         {% endblock title %}
     </title>
     <!-- Bootstrap Core CSS -->
@@ -31,8 +30,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 
@@ -42,11 +41,11 @@
 
     <!-- django CMS toolbar adjustment -->
     {% if request.toolbar %}
-        <style>
-            .cms-toolbar-expanded .navbar-custom {
-                margin-top: 45px;
-            }
-        </style>
+    <style>
+        .cms-toolbar-expanded .navbar-custom {
+            margin-top: 45px;
+        }
+    </style>
     {% endif %}
 
 </head>
@@ -82,20 +81,34 @@
 
 <!-- Page Header  -->
 {% block header %}
-    {% placeholder header or %}
-        <!-- Set your background image for this header on the line below. -->
-        <header class="intro-header" style="background-image: url({% static 'img/about-bg.jpg' %})">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="page-heading">
-                            <h1>{% page_attribute "page_title" %}</h1>
-                        </div>
-                    </div>
+<!-- Set your background image for this header on the line below. -->
+{% render_model_block request.current_page.pagefieldextension %}
+<header class="intro-header" style="background-image: url(
+    {% with image=request.current_page.pagefieldextension.background_image %}
+        {% if image %}
+            {% thumbnail image 1200x400 crop subject_location=image.subject_location %}
+        {% else %}
+            {% static 'img/about-bg.jpg' %}
+        {% endif %}
+    {% endwith %}
+)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>{% render_model request.current_page "page_title" %}</h1>
+                    {% if request.current_page.pagefieldextension.subtitle %}
+                    <hr class="small">
+                    <span class="subheading">
+                            {{ request.current_page.pagefieldextension.subtitle }}
+                        </span>
+                    {% endif %}
                 </div>
             </div>
-        </header>
-    {% endplaceholder %}
+        </div>
+    </div>
+</header>
+{% endrender_model_block %}
 {% endblock %}
 
 <!-- Main Content -->

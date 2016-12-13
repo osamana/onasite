@@ -171,7 +171,8 @@ INSTALLED_APPS = (
     'captcha',
     'emailit',
 
-    'mysite'
+    'mysite',
+    'my_custom_page_extention',
 )
 
 LANGUAGES = (
